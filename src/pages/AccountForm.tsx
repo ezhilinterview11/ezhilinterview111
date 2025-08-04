@@ -48,7 +48,7 @@ function AccountForm() {
   const updateWallet = useUpdateWallet();
   const updateCreditCard = useUpdateCreditCard();
   
-  const { register, handleSubmit, setValue, formState: { errors } } = useForm<FormData>({
+  const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<FormData>({
     defaultValues: {
       name: '',
       currentBalance: 0,
